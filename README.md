@@ -10,6 +10,12 @@ This workflow exaplains the hybrid de novo assembly of *Pseudomonas aeruginosa* 
 The tool ```fastqc``` was used to check the read quality . ```module load fastqc-0.11.7```  was ran to load the tool into the enivironmnet and the tool was ran:
 <pre> fastqc SRR30916324_1.fastq
 fastqc SRR30916324_2.fastq</pre>
+Output is an ```.html``` file that you can view in your web browser. 
 Trimming of low quality was then performed with ```trimmomatic-0.36``` for the paired-end reads:
 <pre> java -jar $TRIMMOMATIC PE SRR30916324_1.fastq SRR30916324_2.fastq SRR30916324_1_paired.fastq SRR30916324_1_unpaired.fastq SRR30916324_2_paired.fastq SRR30916324_2_unpaired.fastq SLIDINGWINDOW:4:28 MINLEN:50 </pre>
+Output is a trimmed ```.fastq``` file.
+### 3.2 Hybrid de novo assembly
+
+
+
 
