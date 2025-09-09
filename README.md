@@ -4,6 +4,7 @@ The data was obtained from a public database from a study of Genome assembly of 
 ## 2.Obtaining the data
 The long reads were obtaiend from the NCBI database and gunzip *.fastq.gz was used to unzip the file. 
 The short reads were obtained with sratoolkit: ```module load sratoolkit.3.0.7``` then ```fasterq-dump SRR30916324 --split-files```.
+File names: ```SRR30916324_1.fastq```,```SRR30916324_2.fastq``` and ```SRR30916323.fastq```.
 ## 3.Workflow
 This workflow exaplains the hybrid de novo assembly of *Pseudomonas aeruginosa* YK01 (script stored in Script/ )
 ### 3.1 Quality check
