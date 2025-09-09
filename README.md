@@ -9,6 +9,6 @@ This workflow exaplains the hybrid de novo assembly of *Pseudomonas aeruginosa* 
 ### 3.1 quality check
 The tool ```fastqc``` was used to check the read quality . ```module load fastqc-0.11.7```  was ran to load the tool into the enivironmnet and the tool was ran:
 <pre> fastqc SRR30916324_1.fastq
-fastqc SRR30916324_2.fastq</pre>
+  fastqc SRR30916324_2.fastq</pre>
 
 
