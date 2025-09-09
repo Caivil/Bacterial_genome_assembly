@@ -15,7 +15,9 @@ Trimming of low quality was then performed with ```trimmomatic-0.36``` for the p
 <pre> java -jar $TRIMMOMATIC PE SRR30916324_1.fastq SRR30916324_2.fastq SRR30916324_1_paired.fastq SRR30916324_1_unpaired.fastq SRR30916324_2_paired.fastq SRR30916324_2_unpaired.fastq SLIDINGWINDOW:4:28 MINLEN:50 </pre>
 Output is a trimmed ```.fastq``` file.
 ### 3.2 Hybrid de novo assembly
+In this step long reads were assembled and refined with the
 ```module load unicycler```  was ran to load the tool into the enivironmnet. ```Unicycler``` is the assmbely tool which reqiured ```module load racon``` and ```module load samtools-1.7 ``` in this instance.
+
 <pre>unicycler -1 SRR30916324_1_paired.fastq -2 SRR30916324_2_paired.fastq -l SRR30916323.fastq -o Assembled_output --threads 8 --no_pilon</pre>
 
 
