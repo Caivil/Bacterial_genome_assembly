@@ -6,7 +6,7 @@ The long reads were obtaiend from the NCBI database and gunzip *.fastq.gz was us
 The short reads were obtained with sratoolkit: ```module load sratoolkit.3.0.7``` then ```fasterq-dump SRR30916324 --split-files```.
 File names: ```SRR30916324_1.fastq```,```SRR30916324_2.fastq``` and ```SRR30916323.fastq```.
 ## 3.Workflow
-This workflow exaplains the hybrid de novo assembly of *Pseudomonas aeruginosa* YK01 (script stored in workflow/ )
+This workflow explains the hybrid de novo assembly of *Pseudomonas aeruginosa* YK01 (script stored in workflow/ )
 ### 3.1 Quality check
 The tool ```fastqc``` was used to check the read quality . ```module load fastqc-0.11.7```  was ran to load the tool into the enivironmnet and the tool was ran:
 <pre> fastqc SRR30916324_1.fastq
